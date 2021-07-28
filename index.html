@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Form</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="main">
+			<form action="#" id='form' class="form">
+				<h1 class="form__title">Форма обратной связи</h1>
+				<div class="form__item">
+					<label for="name" class="form__label">Имя:</label>
+					<input id="name" autocomplete="off" type="text" name="name" class="form__input _req">
+				</div>
+				<div class="form__item">
+					<label for="lastname" class="form__label">Фамилия:</label>
+					<input id="lastname" autocomplete="off" type="text" name="lastname" class="form__input">
+				</div>
+				<div class="form__item">
+					<label for="mail" class="form__label">Email:</label>
+					<input id="mail" autocomplete="off" type="text" name="email" class="form__input _req _email">
+				</div>
+				<div class="form__item">
+					<label for="phone" class="form__label">Телефон:</label>
+					<input id="phone" autocomplete="off" type="tel" name="phone" class="form__input _req">
+				</div>
+				<div class="form__item">
+					<h2 class="form__label">Открытые категории</h2>
+					<label class="checkbox">
+						<input id='B' checked class="checkbox__input" type="checkbox" value="1" name="">
+						<label for="B" class="checkbox__text"><span>B</span></label>
+					</label>
+					<label class="checkbox">
+						<input id="C" class="checkbox__input" type="checkbox" value="1" name="">
+						<label for="C" class="checkbox__text"><span>C</span></label>
+					</label>
+					<label class="checkbox">
+						<input id="D" class="checkbox__input" type="checkbox" value="1" name="">
+						<label for="D" class="checkbox__text"><span>D</span></label>
+					</label>
+				</div>
+				<div class="form__item">
+					<h2 class="form__label">Стаж вождения</h2>
+					<div class="options">
+						<div class="options__item">
+							<input id="three" class="options__input" checked type="radio" value="1" name="age">
+							<label for="three" class="options__text"><span>от 0 до 3-х лет</span></label>
+						</div>
+						<div class="options__item">
+							<input id="threemore" class="options__input" type="radio" value="2" name="age">
+							<label for="threemore" class="options__text"><span>от 3-х лет до 6 лет</span></label>
+						</div>
+						<div class="options__item">
+							<input id='six' class="options__input" type="radio" value="3" name="age">
+							<label for="six" class="options__text"><span>от 6 лет</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="form__item">
+					<h2 class="form__label">Прикрепить фото В/У</h2>
+					<div class="file">
+						<div class="file__item">
+							<input accept=".png,.jpg,.gif" type="file" name="file" class="file__image">
+							<div class="file__btn _req">Выбрать</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="form__item">
+					<h2 class="form__label">Почему хотите работать у нас?</h2>
+					<textarea class="form__input"></textarea>
+				</div>
+				<div class="form__item">
+					<button class="form__btn" type="submit">Отправить заявку</button>
+				</div>
+			</form>
+		</main>
+	</div>
+	<script src="_src/js/script.js"></script>
+</body>
+
+</html>
